@@ -3,10 +3,31 @@
  */
 
 /* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
+a {
+    color: #f39c12;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
 /* Custom default button */
@@ -167,11 +188,11 @@ border:5px solid #0066FF;
   }
 }
 
-.pagination
+.w
 {
-  border-color: black;
+  font-size: 34px;
+  padding:15px;
 }
-
 @media (min-width: 992px) {
   .masthead,
   .mastfoot,
